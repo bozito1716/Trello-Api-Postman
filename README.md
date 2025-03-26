@@ -2,6 +2,12 @@
 
 This project consists of Postman collections and requests designed to interact with the Trello API. It includes the workflow for creating, updating, retrieving, deleting, and archiving various Trello entities such as boards, lists, cards, and checklists. The requests are structured in a way to automate and test the full lifecycle of each entity.
 
+## Technologies Used  
+- **Languages:** JavaScript, JSON  
+- **Tools:** Postman, Trello API
+- **Testing Frameworks:** Postman Tests (pm.test)
+
+
 ## Environment Variables
 
 The following environment variables are used in this project:
@@ -10,8 +16,29 @@ The following environment variables are used in this project:
 - `key`: Your Trello API key (private key).
 - `token`: Your Trello API token (private token).
 
-- 
+## How to Run the Tests
 
+1. **Import the Collection:**
+   - Download and import the Postman collection and environment into your Postman app.
+   
+2. **Set up the Environment:**
+   - Set the environment variables (`base_url`, `key`, `token`) with your Trello API credentials.
+   
+3. **Run Requests:**
+   - You can run each request individually or use Postman’s collection runner to execute all requests in the collection.
+
+4. **Review Test Results:**
+   - After running the requests, Postman will automatically display the results of the tests in the **Test Results** tab.
+  
+## Performance Testing
+
+To ensure that API responses are efficient, this test verifies that each request completes within a reasonable time.
+
+```javascript
+pm.test("Reasonable response time", function () {
+    pm.expect(pm.response.responseTime).to.be.below(3000);
+});
+```
 ## Collections Overview
 
 ### Folder 1 - Board
@@ -128,21 +155,6 @@ setTimeout(function() {
 - Status code should be 200 after deletion.
 - The last GET request confirms that the board was successfully deleted (404 is expected).
 
----
-
-## How to Run the Tests
-
-1. **Import the Collection:**
-   - Download and import the Postman collection and environment into your Postman app.
-   
-2. **Set up the Environment:**
-   - Set the environment variables (`base_url`, `key`, `token`) with your Trello API credentials.
-   
-3. **Run Requests:**
-   - You can run each request individually or use Postman’s collection runner to execute all requests in the collection.
-
-4. **Review Test Results:**
-   - After running the requests, Postman will automatically display the results of the tests in the **Test Results** tab.
 
 ---
 
