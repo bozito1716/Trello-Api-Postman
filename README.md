@@ -13,7 +13,7 @@ Collections Overview
 
 Folder 1 - Board
 
-Requests Work Flow:
+Requests Workflow:
 	1.	POST: Create a new board on Trello
 	2.	GET: Confirm the board was successfully created
 	3.	PUT: Update the board’s name
@@ -27,7 +27,7 @@ Tests:
 
 Folder 2 - List inside the New Created Board
 
-Requests Work Flow:
+Requests Workflow:
 	1.	POST: Create a new list inside the new board
 	2.	GET: Confirm the list was successfully created
 	3.	PUT: Update the list’s name
@@ -42,7 +42,7 @@ Tests:
 
 Folder 3 - Cards Inside the New List
 
-Requests Work Flow:
+Requests Workflow:
 	1.	POST: Create a new card inside the new list
 	2.	GET: Confirm the card was successfully created
 	3.	GET: Confirm all the cards inside the list
@@ -57,7 +57,7 @@ Tests:
 
 Folder 4 - Checklist and Check Items Inside the New Card
 
-Requests Work Flow:
+Requests Workflow:
 	1.	POST: Create a checklist inside the new card
 	2.	GET: Confirm the checklist was successfully created
 	3.	PUT: Update the checklist’s name
@@ -71,7 +71,7 @@ Tests:
 
 Folder 5 - Delete Items and Confirmation
 
-Requests Work Flow:
+Requests Workflow:
 	1.	DELETE: Delete the last checklist item created inside the checklist
 	2.	GET: Confirm the checklist item was successfully deleted
 	3.	DELETE: Delete the last checklist inside the card
@@ -95,7 +95,7 @@ setTimeout(function() {
 
 Folder 6 - Archive Cards
 
-Requests Work Flow:
+Requests Workflow:
 	1.	POST: Create a new card inside the list
 	2.	GET: Confirm new card
 	3.	POST: Archive all the cards inside the list
@@ -106,7 +106,7 @@ Tests:
 
 Folder 7 - Last Item to Delete (Board) and Confirmation
 
-Requests Work Flow:
+Requests Workflow:
 	1.	DELETE: Delete the entire board on Trello
 	2.	GET: Confirm the board was successfully deleted
 
@@ -127,3 +127,4 @@ How to Run the Tests
 Conclusion
 
 This Postman project automates testing the entire Trello API lifecycle, ensuring that boards, lists, cards, and checklists are created, updated, and deleted properly. You can extend this project further to include additional Trello API functionalities or integrate it into your continuous integration/continuous deployment (CI/CD) pipeline for automated testing.
+
