@@ -1,5 +1,7 @@
 # Trello API - Postman Testing
 
+walkthrough video - https://youtu.be/Q8D8S4ITJEI
+
 This project consists of Postman collections and requests designed to interact with the Trello API. It includes the workflow for creating, updating, retrieving, deleting, and archiving various Trello entities such as boards, lists, cards, and checklists. The requests are structured in a way to automate and test the full lifecycle of each entity.
 
 ## Technologies Used  
